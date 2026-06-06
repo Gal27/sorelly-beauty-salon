@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   // carrega config opcional
-  fetch('/data/site.json').then(r => {
+  fetch('data/site.json').then(r => {
     if (!r.ok) throw new Error('no config');
     return r.json();
   }).then(cfg => {
     if (cfg.whatsappNumber) waNumber = sanitizeNumber(cfg.whatsappNumber);
     if (cfg.socials && Array.isArray(cfg.socials)) renderSocials(cfg.socials);
-  }).catch(()=>{
-    // sem config, usar padrão
+  }).catch((error)=>{
+    console.warn('Não foi possível carregar data/site.json, usando número padrão', error);
     renderSocials([
       { name: 'instagram', url: 'https://instagram.com/' },
       { name: 'facebook', url: 'https://facebook.com/' }
