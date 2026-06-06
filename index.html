@@ -3,65 +3,143 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sorelly Beauty Salon</title>
+    <title>Sorelly Beauty Home Care</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <h1 class="brand">Sorelly Beauty Salon</h1>
+      <div class="container header-inner">
+        <div>
+          <p class="eyebrow">Sorelly Beauty</p>
+          <h1 class="brand">Beleza Home Care</h1>
+        </div>
         <nav class="nav">
           <a href="#services">Serviços</a>
           <a href="#about">Sobre</a>
           <a href="#contact">Contato</a>
         </nav>
-        <div id="socials" class="socials" aria-hidden="false"></div>
       </div>
+      <div class="container socials-bar" id="socials" aria-hidden="false"></div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h2>Beleza que inspira confiança</h2>
-          <p>Tratamentos profissionais em um ambiente acolhedor.</p>
-          <a class="btn" href="#contact">Agende uma visita</a>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Home Care em Gravataí e região</p>
+            <h2>Transforme seu visual com cuidado e estilo sem sair de casa.</h2>
+            <p>Serviços profissionais no conforto do seu lar: corte, cor, estética e unhas com carinho e segurança.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Fale no WhatsApp</a>
+              <a class="btn btn-secondary" href="#services">Ver serviços</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img class="hero-main-image" src="images/74d5ffc153aaac2ee35b5546ff40bc9f.jpg" alt="Atendimento de beleza em casa" />
+            <div class="info-block">
+              <strong>Agende</strong>
+              <span>Rápido e prático</span>
+            </div>
+            <div class="info-block">
+              <strong>Local</strong>
+              <span>Gravataí e região</span>
+            </div>
+            <div class="info-block">
+              <strong>Especial</strong>
+              <span>Cortes, cor e estética</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="services" class="container cards">
-        <h3>Nossos Serviços</h3>
+        <div class="section-header">
+          <h3>Nossos Serviços</h3>
+          <p>Escolha a experiência perfeita para renovar seu visual.</p>
+        </div>
         <div class="card-grid">
           <article class="card">
-            <h4>Corte & Estilo</h4>
-            <p>Modelagem personalizada para realçar sua beleza.</p>
+            <h4>Corte</h4>
+            <p>Modelagens personalizadas para valorizar seu rosto e estilo.</p>
+          </article>
+          <article class="card">
+            <h4>Escova</h4>
+            <p>Finalização macia e com brilho para um visual impecável.</p>
           </article>
           <article class="card">
             <h4>Coloração</h4>
-            <p>Técnicas modernas e tonalidades naturais.</p>
+            <p>Tinturas e mechas com acabamento profissional e tonalidade natural.</p>
           </article>
           <article class="card">
-            <h4>Tratamentos Estéticos</h4>
-            <p>Cuidados para pele, unhas e relaxamento.</p>
+            <h4>Progressiva</h4>
+            <p>Alisamento com resultado duradouro e fios mais controlados.</p>
+          </article>
+          <article class="card">
+            <h4>Hidratação</h4>
+            <p>Tratamentos nutritivos que deixam o cabelo hidratado e saudável.</p>
+          </article>
+          <article class="card">
+            <h4>Relaxamento</h4>
+            <p>Redução de volume com fios mais suaves e fáceis de pentear.</p>
+          </article>
+          <article class="card">
+            <h4>Cauterização</h4>
+            <p>Reconstrução capilar para fios mais fortes e com brilho intenso.</p>
+          </article>
+          <article class="card">
+            <h4>Botox</h4>
+            <p>Recuperação e alinhamento dos fios para um aspecto sedoso.</p>
+          </article>
+          <article class="card">
+            <h4>Sobrancelha</h4>
+            <p>Design e cuidado para um olhar mais definido e harmônico.</p>
+          </article>
+          <article class="card">
+            <h4>Banho de Brilho</h4>
+            <p>Finalização com pigmento suave para cor vibrante e brilho extra.</p>
           </article>
         </div>
       </section>
 
-      <section id="about" class="container">
-        <h3>Sobre nós</h3>
-        <p>Pequeno salão local com foco em atendimento personalizado e qualidade.</p>
+      <section id="about" class="container about-section">
+        <div class="about-grid">
+          <div>
+            <h3>Sobre nós</h3>
+            <p>Somos um serviço home care com foco em conforto e segurança. Cada cliente recebe atenção especial, desde o primeiro contato até o resultado final, direto em casa.</p>
+          </div>
+          <div class="about-features">
+            <div class="feature-item">
+              <strong>Ambiente acolhedor</strong>
+              <p>Espaço pensado para você relaxar.</p>
+            </div>
+            <div class="feature-item">
+              <strong>Profissionais experientes</strong>
+              <p>Equipe pronta para atender sua beleza com carinho.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contact" class="container contact">
-        <h3>Contato</h3>
-        <form id="contactForm">
-          <label>Nome</label>
-          <input type="text" name="name" required />
-          <label>Telefone ou E-mail</label>
-          <input type="text" name="contact" required />
-          <label>Mensagem</label>
-          <textarea name="message"></textarea>
-          <button class="btn" type="submit">Enviar via WhatsApp</button>
-          <p class="hint">Ao enviar, você será redirecionada(o) para o WhatsApp com sua mensagem pronta para envio.</p>
+      <section id="contact" class="container contact-card">
+        <div class="contact-intro">
+          <h3>Entre em contato</h3>
+          <p>Escreva suas informações e mensagem. Você será redirecionada diretamente ao WhatsApp para falar com a equipe.</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <div class="field-row">
+            <label>Nome completo</label>
+            <input type="text" name="name" placeholder="Nome e sobrenome" required />
+          </div>
+          <div class="field-row">
+            <label>Telefone</label>
+            <input type="tel" name="contact" placeholder="Ex: 5199999-9999" required />
+          </div>
+          <div class="field-row">
+            <label>Mensagem</label>
+            <textarea name="message" placeholder="Escreva seu pedido ou dúvida"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar via WhatsApp</button>
+          <p class="hint">Ao enviar, você será direcionada ao WhatsApp já com a mensagem pronta.</p>
         </form>
       </section>
     </main>

@@ -41,10 +41,23 @@ document.addEventListener('DOMContentLoaded', function(){
     form.addEventListener('submit', function(e){
       e.preventDefault();
       const data = new FormData(form);
-      const name = data.get('name') || '';
-      const contact = data.get('contact') || '';
-      const message = data.get('message') || '';
-      const text = `Olá, meu nome é ${name}. Contato: ${contact}. Mensagem: ${message}`;
+      const name = (data.get('name') || '').trim();
+      const contact = (data.get('contact') || '').trim();
+      const message = (data.get('message') || '').trim();
+      const nameParts = name.split(/\s+/).filter(Boolean);
+      const phone = sanitizeNumber(contact);
+
+      if(nameParts.length !== 2){
+        alert('Por favor informe exatamente nome e sobrenome (duas palavras).');
+        return;
+      }
+
+      if(phone.length < 10 || phone.length > 11){
+        alert('Por favor informe um telefone válido apenas com números.');
+        return;
+      }
+
+      const text = `Olá, meu nome é ${name}. Telefone: ${contact}. Mensagem: ${message}`;
       const encoded = encodeURIComponent(text);
       const number = sanitizeNumber(waNumber) || sanitizeNumber(DEFAULT_WA);
       const waUrl = `https://wa.me/${number}?text=${encoded}`;

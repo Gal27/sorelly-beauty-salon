@@ -28,4 +28,6 @@ Visite `http://localhost:3000` para ver a lista de links e `http://localhost:300
 
 WhatsApp e redes sociais
 
-Edite o arquivo `data/site.json` para colocar o número de WhatsApp (formato internacional, sem `+`, ex: `5511999999999`) e seus links sociais. O formulário de contato irá redirecionar para `https://wa.me/<numero>?text=...` com a mensagem preenchida.
+Edite o arquivo `data/site.json` para colocar o número de WhatsApp (formato internacional, sem `+`, ex: `5592995323897`) e seus links sociais. O formulário de contato irá redirecionar para `https://wa.me/<numero>?text=...` com a mensagem preenchida.
+
+O site é estático e pode ser hospedado gratuitamente no GitHub Pages ou outro serviço de arquivos estáticos. Depois, se quiser, dá para lançar com domínio e hospedagem pagos para um visual ainda mais profissional.
